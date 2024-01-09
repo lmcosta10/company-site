@@ -1,5 +1,10 @@
 "use strict";
 
+// Elements
+const tabs = document.querySelectorAll(".careers-tab");
+const tabsContainer = document.querySelector(".careers-tab-container");
+const tabsContent = document.querySelectorAll(".careers-content");
+
 // Smooth scroll behavior for nav bar
 document.querySelector(".nav-links").addEventListener("click", function (e) {
   e.preventDefault();
@@ -10,10 +15,6 @@ document.querySelector(".nav-links").addEventListener("click", function (e) {
 });
 
 // Tabbed component
-const tabs = document.querySelectorAll(".careers-tab");
-const tabsContainer = document.querySelector(".careers-tab-container");
-const tabsContent = document.querySelectorAll(".careers-content");
-
 tabsContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".careers-tab");
 
