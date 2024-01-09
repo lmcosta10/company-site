@@ -5,6 +5,7 @@ const tabs = document.querySelectorAll(".careers-tab");
 const tabsContainer = document.querySelector(".careers-tab-container");
 const tabsContent = document.querySelectorAll(".careers-content");
 const nav = document.querySelector(".nav");
+const allSections = document.querySelectorAll(".section");
 
 // Smooth scroll behavior for nav bar
 document.querySelector(".nav-links").addEventListener("click", function (e) {
@@ -45,3 +46,24 @@ const handleHover = function (e) {
 nav.addEventListener("mouseover", handleHover.bind(0.5));
 
 nav.addEventListener("mouseout", handleHover.bind(1));
+
+// Reveal sections on scroll
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("hidden-section");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+});
+
+allSections.forEach(function (section) {
+  section.classList.add("hidden-section");
+
+  sectionObserver.observe(section);
+});

@@ -22,8 +22,9 @@ body {
   background: rgb(240, 240, 240);
 }
 
-.section--hidden {
+.hidden-section {
   opacity: 0;
+  transform: translateY(2rem);
 }
 
 /* Nav bar */
@@ -156,8 +157,11 @@ header {
 /* Sections */
 .section {
   min-width: 1050px;
-  padding: 14rem 25rem;
+  padding: 3rem 25rem;
   height: 100vh;
+
+  /* For section revealing on scroll */
+  transition: transform 1s, opacity 1s;
 }
 
 .section-title h2 {
