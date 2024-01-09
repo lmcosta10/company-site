@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+  </head>
+  <body>
+    <nav class="nav">
+      <p>Company</p>
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a class="nav-link" href="#section-services">Our services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section-careers">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section-contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-btn btn-show-modal" href="#">Open account</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header-title">
+        <h1>
+          We offer the <br />
+          <span class="highlight">best</span> service
+        </h1>
+        <h4>description...</h4>
+      </div>
+      <img src="images/company.jpg" class="header-img" />
+    </header>
+
+    <section class="section" id="section-services">
+      <div class="section-title">
+        <h2>Our services</h2>
+        <h3>All about us</h3>
+      </div>
+    </section>
+
+    <section class="section" id="section-careers">
+      <div class="section-title">
+        <h2>Careers</h2>
+        <h3>Join our team</h3>
+      </div>
+      <div>
+        <div class="careers-tab-container">
+          <button
+            class="btn careers-tab careers-tab-1 careers-tab-active"
+            data-tab="1"
+          >
+            <span>01</span>Part 1
+          </button>
+          <button class="btn careers-tab careers-tab-2" data-tab="2">
+            <span>02</span>Part 2
+          </button>
+          <button class="btn careers-tab careers-tab-3" data-tab="3">
+            <span>03</span>Part 3
+          </button>
+        </div>
+        <div class="careers-content careers-content-1 careers-content-active">
+          <h5 class="careers-header">Do this</h5>
+          <p>Description</p>
+        </div>
+
+        <div class="careers-content careers-content-2">
+          <h5 class="careers-header">Do that</h5>
+          <p>Description</p>
+        </div>
+        <div class="careers-content careers-content-3">
+          <h5 class="careers-header">Last one</h5>
+          <p>Description</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section-contact">
+      <div class="section-title">
+        <h2>Contact us</h2>
+      </div>
+    </section>
+
+    <footer class="footer"></footer>
+
+    <div class="modal hidden"></div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
