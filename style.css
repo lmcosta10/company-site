@@ -169,6 +169,14 @@ header {
   text-align: right;
 }
 
+.careers-box {
+  height: 80%;
+  padding: 0 1rem;
+  border-radius: 4rem;
+  border: 2px solid rgb(182, 182, 182);
+  box-shadow: 2px 2px 5px rgb(182, 182, 182);
+}
+
 .careers {
   max-width: 100rem;
   margin: 12rem auto 0 auto;
