@@ -74,6 +74,10 @@ body {
   margin-left: 4rem;
 }
 
+.nav-item:last-of-type {
+  min-width: 200px;
+}
+
 .nav-btn {
   padding: 2rem;
   border-radius: 4rem;
@@ -103,6 +107,7 @@ header {
   position: relative;
   top: 3rem;
   font-size: 3rem;
+  padding: 2rem;
 }
 
 .header-title h4 {
@@ -113,8 +118,13 @@ header {
   position: relative;
   top: 3rem;
   left: 2rem;
-  width: 50%;
-  min-width: 60rem;
+  max-height: 80%;
+  max-width: 50%;
+}
+
+.header-img img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* Highlight */
@@ -145,6 +155,7 @@ header {
 
 /* Sections */
 .section {
+  min-width: 1050px;
   padding: 14rem 25rem;
   height: 100vh;
 }
@@ -171,6 +182,7 @@ header {
 
 .careers-box {
   height: 80%;
+  width: 100%;
   padding: 0 1rem;
   border-radius: 4rem;
   border: 2px solid rgb(182, 182, 182);
@@ -178,7 +190,7 @@ header {
 }
 
 .careers {
-  max-width: 100rem;
+  max-width: 90vw;
   margin: 12rem auto 0 auto;
 
   background-color: #fff;
@@ -190,7 +202,7 @@ header {
   font-family: inherit;
   font-weight: 500;
   border: none;
-  padding: 1.25rem 4.5rem;
+  padding: 1.25rem 3rem;
   border-radius: 10rem;
   cursor: pointer;
   transition: all 0.3s;
@@ -253,11 +265,42 @@ header {
 
 /* Media query */
 
-@media (max-width: 768px) {
-  /* TODO */
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
 
-  .nav {
+  .header {
+    min-width: unset;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .header-img {
+    width: 80vw;
+    min-width: 400px;
+  }
+
+  /* TODO: implement nav bar for small screen
+  .nav,
+  .nav-links {
     display: flex;
     flex-direction: column;
+  }
+
+  .nav {
+    height: 100vh;
+    width: 40%;
+    position: relative;
+  }
+  TODO: remove this .nav conf */
+  .nav {
+    display: none;
+  }
+
+  .section {
+    min-width: unset;
+    width: 100%;
+    padding: 5rem;
   }
 }
