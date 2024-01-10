@@ -12,7 +12,12 @@ document.querySelector(".nav-links").addEventListener("click", function (e) {
   e.preventDefault();
   if (e.target.classList.contains("nav-link")) {
     const id = e.target.getAttribute("href");
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    const rect = document.querySelector(id).getBoundingClientRect();
+    const navRect = nav.getBoundingClientRect();
+    window.scrollTo({
+      top: rect["y"] - navRect["height"] + window.scrollY,
+      behavior: "smooth",
+    });
   }
 });
 
