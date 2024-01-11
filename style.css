@@ -177,7 +177,7 @@ header {
 
 .section-title {
   display: block;
-  margin-bottom: 8rem;
+  padding-bottom: 8rem;
 }
 
 /* Second section */
@@ -186,9 +186,10 @@ header {
 }
 
 .careers-box {
-  height: 80%;
-  width: 100%;
+  height: 65%;
+  width: 85%;
   padding: 0 1rem;
+  margin: 0 auto;
   border-radius: 4rem;
   border: 2px solid rgb(182, 182, 182);
   box-shadow: 2px 2px 5px rgb(182, 182, 182);
@@ -283,6 +284,7 @@ header {
   .header-img {
     width: 80vw;
     min-width: 400px;
+    margin: 0 auto;
   }
 
   /* TODO: implement nav bar for small screen
