@@ -159,6 +159,7 @@ header {
   min-width: 1050px;
   padding: 3rem 25rem;
   height: 100vh;
+  height: calc(100vh - 9rem);
 
   /* For section revealing on scroll */
   transition: transform 1s, opacity 1s;
