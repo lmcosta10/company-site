@@ -269,7 +269,6 @@ header {
 }
 
 /* Media query */
-
 @media (max-width: 900px) {
   html {
     font-size: 50%;
@@ -307,5 +306,37 @@ header {
     min-width: unset;
     width: 100%;
     padding: 5rem;
+  }
+}
+
+@media (max-height: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .header-title {
+    height: 50%;
+  }
+
+  .header-img {
+    height: 50%;
+  }
+
+  /* TODO: implement nav bar for small screen and remove this .nav conf */
+  .nav {
+    display: none;
+  }
+
+  .section {
+    padding: 5rem;
+  }
+
+  .header,
+  .section {
+    height: 60rem;
   }
 }
