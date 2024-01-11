@@ -187,7 +187,7 @@ header {
 
 .careers-box {
   height: 65%;
-  width: 85%;
+  width: 95%;
   padding: 0 1rem;
   margin: 0 auto;
   border-radius: 4rem;
@@ -283,7 +283,7 @@ header {
 
   .header-img {
     width: 80vw;
-    min-width: 400px;
+    min-width: 280px;
     margin: 0 auto;
   }
 
